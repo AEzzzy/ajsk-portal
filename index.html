@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJSK Portal | Form Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            border-color: #3b82f6;
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #60a5fa, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center py-16 px-4">
+
+    <div class="text-center max-w-2xl mb-16">
+        <h1 class="text-5xl font-bold mb-4 tracking-tight">AJSK <span class="gradient-text">FORMS</span></h1>
+        <p class="text-gray-400 text-lg mb-8">Centralized hub for all talabat enrollment and registration processes.</p>
+        
+        <div class="inline-flex items-center gap-3 bg-red-500/10 border border-red-500/20 px-6 py-3 rounded-full">
+            <span class="relative flex h-3 w-3">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+            </span>
+            <p class="text-red-400 text-sm font-semibold tracking-wide uppercase">
+                Note: Use your edu account to fill out forms
+            </p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full">
+        
+        <div class="glass-card p-8 rounded-3xl flex flex-col">
+            <div class="mb-6">
+                <span class="bg-blue-500/20 text-blue-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Compulsory</span>
+            </div>
+            <h2 class="text-2xl font-bold mb-4">Coaching Enrollment</h2>
+            <p class="text-gray-400 text-sm leading-relaxed mb-8 flex-grow">
+                Compulsory registration for 1447 - 48H. Required for all talabat to proceed.
+            </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrAmOUhOHHc8qPBVICc8Pe3a5uNwSHmimbTd6iDxZm6yS0Yw/viewform" 
+               target="_blank" 
+               class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-2xl text-center transition-all">
+                Access Form
+            </a>
+        </div>
+
+        <div class="glass-card p-8 rounded-3xl flex flex-col">
+            <div class="mb-6">
+                <span class="bg-purple-500/20 text-purple-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Tournament</span>
+            </div>
+            <h2 class="text-2xl font-bold mb-4">JPL 08</h2>
+            <p class="text-gray-400 text-sm leading-relaxed mb-8 flex-grow">
+                Enrollment for those wishing to participate in the upcoming JPL tournament sessions.
+            </p>
+            <a href="https://forms.gle/YVSZae57SKdTf1Nb6" 
+               target="_blank" 
+               class="w-full bg-purple-600 hover:bg-purple-500 text-white font-bold py-4 rounded-2xl text-center transition-all">
+                Join Tournament
+            </a>
+        </div>
+
+        <div class="glass-card p-8 rounded-3xl flex flex-col">
+            <div class="mb-6">
+                <span class="bg-emerald-500/20 text-emerald-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-tighter">KHIDMAT</span>
+            </div>
+            <h2 class="text-2xl font-bold mb-4">Musaideen Form</h2>
+            <p class="text-gray-400 text-sm leading-relaxed mb-8 flex-grow">
+                Open for those who missed previous enrollment and wish to join the Musaideen.
+            </p>
+            <a href="https://forms.gle/y3JBi6jjuzt6w3oMA" 
+               target="_blank" 
+               class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 rounded-2xl text-center transition-all">
+                Enroll Now
+            </a>
+        </div>
+
+    </div>
+
+    <footer class="mt-24 border-t border-white/5 pt-8 w-full max-w-6xl flex justify-between items-center text-gray-500 text-xs">
+        <p>&copy; 1447-48H AJSK HADIASHAR</p>
+        <div class="flex gap-6">
+                        <span>EDU DOMAIN REQUIRED</span>
+        </div>
+    </footer>
+
+</body>
+</html>
